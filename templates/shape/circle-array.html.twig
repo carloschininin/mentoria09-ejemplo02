@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Demo circle
+{% endblock %}
+
+{% block body %}
+    <h1>CIRCLE</h1>
+    <hr>
+    {% for item in items %}
+        <h4>Radio: {{ item.radio }}, Area: {{ item.area }}</h4>
+    {% endfor %}
+
+{% endblock %}

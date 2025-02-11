@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Demo circle
+{% endblock %}
+
+{% block body %}
+    <h1>CIRCLE</h1>
+    <hr>
+    <h2>Area: {{ area }}</h2>
+    <h2>Perimetro: {{ perimetro }}</h2>
+
+    {% if radio > 4 %}
+        <h4>El radio es mayor a 4</h4>
+    {% else %}
+        <h4>El radio es menor e igual a 4</h4>
+    {% endif %}
+
+{% endblock %}
